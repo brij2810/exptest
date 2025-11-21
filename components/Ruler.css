@@ -1,0 +1,150 @@
+.ruler {
+  position: relative;
+}
+
+.ruler__indicator {
+  position: absolute;
+  overflow: hidden;
+}
+
+.ruler__top-indicator,
+.ruler__bottom-indicator {
+  position: absolute;
+  background-color: var(--color-system-warning-5);
+  border-radius: 0.5px;
+}
+
+.ruler__line {
+  position: absolute;
+  background-color: var(--color-system-warning-5);
+}
+
+.ruler__label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--color-system-warning-5);
+  justify-content: center;
+}
+
+.ruler__label p {
+  margin: 0;
+  line-height: 17px;
+}
+
+/* Vertical Position */
+.ruler--position-vertical {
+  width: 24px;
+}
+
+.ruler--position-vertical .ruler__indicator {
+  bottom: 0;
+  top: 0;
+  width: 9px;
+}
+
+.ruler--position-vertical .ruler__top-indicator {
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 9px;
+}
+
+.ruler--position-vertical .ruler__bottom-indicator {
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 9px;
+}
+
+.ruler--position-vertical .ruler__line {
+  bottom: 1px;
+  left: 4px;
+  top: 1px;
+  width: 1px;
+}
+
+.ruler--position-vertical .ruler__label {
+  bottom: 0;
+  top: 0;
+  width: 20px;
+}
+
+.ruler--position-vertical.ruler--text-left .ruler__indicator {
+  left: 24px;
+}
+
+.ruler--position-vertical.ruler--text-left .ruler__label {
+  left: 11px;
+  transform: translateX(-50%);
+}
+
+.ruler--position-vertical.ruler--text-right .ruler__indicator {
+  right: 24px;
+}
+
+.ruler--position-vertical.ruler--text-right .ruler__label {
+  right: 11px;
+  transform: translateX(50%);
+}
+
+/* Horizontal Position */
+.ruler--position-horizontal {
+  height: 20px;
+}
+
+.ruler--position-horizontal .ruler__indicator {
+  left: 0;
+  right: 0;
+  height: 9px;
+}
+
+.ruler--position-horizontal .ruler__top-indicator {
+  left: 0;
+  top: 0;
+  height: 9px;
+  width: 1px;
+}
+
+.ruler--position-horizontal .ruler__bottom-indicator {
+  right: 0;
+  top: 0;
+  height: 9px;
+  width: 1px;
+}
+
+.ruler--position-horizontal .ruler__line {
+  bottom: 4px;
+  left: 1px;
+  right: 1px;
+  height: 1px;
+}
+
+.ruler--position-horizontal .ruler__label {
+  left: 0;
+  right: 0;
+}
+
+.ruler--position-horizontal.ruler--text-top .ruler__indicator {
+  top: 20px;
+}
+
+.ruler--position-horizontal.ruler--text-top .ruler__label {
+  top: 8.5px;
+  transform: translateY(-50%);
+}
+
+.ruler--position-horizontal.ruler--text-bottom .ruler__indicator {
+  bottom: 20px;
+}
+
+.ruler--position-horizontal.ruler--text-bottom .ruler__label {
+  bottom: 8.5px;
+  transform: translateY(50%);
+}
+

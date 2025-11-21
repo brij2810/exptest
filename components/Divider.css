@@ -1,0 +1,87 @@
+.divider {
+  position: relative;
+  width: 540px;
+}
+
+.divider--rotate {
+  width: 76px;
+  height: 540px;
+}
+
+.divider__line {
+  background-color: var(--color-text-8);
+}
+
+.divider__line--horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+.divider__line--vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 48.68%;
+  width: 1px;
+  height: 100%;
+}
+
+.divider__text {
+  position: absolute;
+  background: white;
+  padding: 0 8px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-2);
+  white-space: pre;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divider--rotate .divider__text {
+  font-size: 14px;
+  line-height: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+}
+
+.divider__text--first {
+  left: 40px;
+}
+
+.divider__text--second {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.divider--rotate .divider__text--second {
+  top: 48.33%;
+  transform: translateX(-50%);
+}
+
+.divider__text--last {
+  right: 48px;
+  text-align: right;
+}
+
+.divider--rotate .divider__text--first {
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.divider--rotate .divider__text--last {
+  bottom: 48px;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.divider--none .divider__text {
+  display: none;
+}
+

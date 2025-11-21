@@ -1,0 +1,40 @@
+.note {
+  position: relative;
+  width: 256px;
+  height: 144px;
+}
+
+.note__base {
+  position: absolute;
+  background-color: var(--color-system-error-8);
+  border-radius: 8px;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.note__arrowhead {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 12px;
+  background-color: var(--color-system-error-8);
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.note__text {
+  position: absolute;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-2);
+  left: 16px;
+  right: 16px;
+  top: 16px;
+  margin: 0;
+}
+

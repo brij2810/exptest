@@ -1,0 +1,72 @@
+:root {
+  /* Display Typography */
+  --font-display-regular-1: 400 82px/98px 'SF Pro Text', sans-serif;
+  --font-display-regular-2: 400 70px/84px 'SF Pro Text', sans-serif;
+  --font-display-regular-3: 400 58px/70px 'SF Pro Text', sans-serif;
+  --font-display-medium-1: 500 82px/98px 'SF Pro Text', sans-serif;
+  --font-display-medium-2: 500 70px/84px 'SF Pro Text', sans-serif;
+  --font-display-medium-3: 500 58px/70px 'SF Pro Text', sans-serif;
+  --font-display-semibold-1: 600 82px/98px 'SF Pro Text', sans-serif;
+  --font-display-semibold-2: 600 70px/84px 'SF Pro Text', sans-serif;
+  --font-display-semibold-3: 600 58px/70px 'SF Pro Text', sans-serif;
+
+  /* Heading Typography */
+  --font-heading-regular-1: 400 48px/58px 'SF Pro Text', sans-serif;
+  --font-heading-regular-2: 400 40px/48px 'SF Pro Text', sans-serif;
+  --font-heading-regular-3: 400 34px/40px 'SF Pro Text', sans-serif;
+  --font-heading-regular-4: 400 28px/32px 'SF Pro Text', sans-serif;
+  --font-heading-regular-5: 400 24px/28px 'SF Pro Text', sans-serif;
+  --font-heading-regular-6: 400 20px/24px 'SF Pro Text', sans-serif;
+  --font-heading-medium-1: 500 48px/58px 'SF Pro Text', sans-serif;
+  --font-heading-medium-2: 500 40px/48px 'SF Pro Text', sans-serif;
+  --font-heading-medium-3: 500 34px/40px 'SF Pro Text', sans-serif;
+  --font-heading-medium-4: 500 28px/32px 'SF Pro Text', sans-serif;
+  --font-heading-medium-5: 500 24px/28px 'SF Pro Text', sans-serif;
+  --font-heading-medium-6: 500 20px/24px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-1: 600 48px/58px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-2: 600 40px/48px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-3: 600 34px/40px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-4: 600 28px/32px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-5: 600 24px/28px 'SF Pro Text', sans-serif;
+  --font-heading-semibold-6: 600 20px/24px 'SF Pro Text', sans-serif;
+  --font-heading-bold-experro-header: 700 20px/24px 'SF Pro Text', sans-serif;
+  --font-heading-regular-experro-header-description: 400 13px/100px 'SF Pro Text', sans-serif;
+
+  /* Title Typography */
+  --font-title-regular-1: 400 16px/20px 'SF Pro Text', sans-serif;
+  --font-title-regular-2: 400 14px/18px 'SF Pro Text', sans-serif;
+  --font-title-medium-1: 500 16px/20px 'SF Pro Text', sans-serif;
+  --font-title-medium-2: 500 14px/18px 'SF Pro Text', sans-serif;
+  --font-title-semibold-1: 600 16px/20px 'SF Pro Text', sans-serif;
+  --font-title-semibold-2: 600 14px/18px 'SF Pro Text', sans-serif;
+
+  /* Text Typography */
+  --font-text-regular-1: 400 16px/24px 'SF Pro Text', sans-serif;
+  --font-text-regular-2: 400 14px/18px 'SF Pro Text', sans-serif;
+  --font-text-regular-para: 400 14px/20px 'SF Pro Text', sans-serif;
+  --font-text-medium-1: 500 16px/20px 'SF Pro Text', sans-serif;
+  --font-text-medium-2: 500 14px/18px 'SF Pro Text', sans-serif;
+  --font-text-semibold-1: 600 16px/20px 'SF Pro Text', sans-serif;
+  --font-text-semibold-2: 600 14px/18px 'SF Pro Text', sans-serif;
+
+  /* Code Typography */
+  --font-code-regular: 400 14px/16px 'SF Pro Text', sans-serif;
+  --font-code-medium: 500 14px/16px 'SF Pro Text', sans-serif;
+  --font-code-semibold: 600 14px/16px 'SF Pro Text', sans-serif;
+
+  /* Link Typography */
+  --font-link-regular: 400 14px/16px 'SF Pro Text', sans-serif;
+  --font-link-semibold: 600 14px/16px 'SF Pro Text', sans-serif;
+
+  /* Caption Typography */
+  --font-caption-regular: 400 14px/16px 'SF Pro Text', sans-serif;
+  --font-caption-medium: 500 14px/16px 'SF Pro Text', sans-serif;
+  --font-caption-semibold: 600 14px/16px 'SF Pro Text', sans-serif;
+
+  /* Small Typography */
+  --font-small-regular: 400 12px/14px 'SF Pro Text', sans-serif;
+  --font-small-medium: 500 12px/14px 'SF Pro Text', sans-serif;
+  --font-small-semibold: 600 12px/14px 'SF Pro Text', sans-serif;
+  --font-small-para: 400 12px/18px 'SF Pro Text', sans-serif;
+}
+

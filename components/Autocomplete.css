@@ -1,0 +1,87 @@
+.autocomplete {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.autocomplete--hover {
+  padding: 8px;
+}
+
+.autocomplete__icon-container {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autocomplete__avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.autocomplete__image {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.autocomplete__text-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  flex-shrink: 0;
+}
+
+.autocomplete__primary-text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-2);
+  margin: 0;
+  white-space: pre;
+}
+
+.autocomplete__secondary-text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+  white-space: pre;
+}
+
+/* Hover state */
+.autocomplete--hover {
+  background-color: var(--color-text-9);
+  border-radius: 8px;
+}
+
+.autocomplete--hover .autocomplete__text-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.autocomplete--hover.autocomplete--icon .autocomplete__text-container {
+  padding-left: 8px;
+}
+

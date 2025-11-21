@@ -1,0 +1,123 @@
+.grid {
+  position: relative;
+}
+
+.grid__base {
+  position: absolute;
+  background-color: var(--color-system-warning-5);
+  opacity: 0.124;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+.grid__label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--color-system-warning-5);
+  justify-content: center;
+}
+
+.grid__label p {
+  margin: 0;
+  line-height: 17px;
+}
+
+.grid__left-line,
+.grid__right-line {
+  position: absolute;
+  bottom: 0.5px;
+  top: 20.5px;
+  width: 1px;
+  background-color: var(--color-system-warning-5);
+}
+
+.grid__right-line {
+  right: 0;
+}
+
+.grid__left-line {
+  left: 0;
+}
+
+/* Horizontal Position */
+.grid--position-horizontal .grid__label {
+  left: 0;
+  right: 0;
+  top: 8.5px;
+  transform: translateY(-50%);
+}
+
+/* Vertical Position */
+.grid--position-vertical .grid__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8.5px;
+  transform: translateY(-50%);
+}
+
+.grid--position-vertical .grid__label p {
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+
+/* Size adjustments for vertical labels */
+.grid--position-vertical.grid--size-4 .grid__label {
+  left: -6.5px;
+  right: -6.5px;
+}
+
+.grid--position-vertical.grid--size-8 .grid__label {
+  left: -4.5px;
+  right: -4.5px;
+}
+
+.grid--position-vertical.grid--size-16 .grid__label {
+  left: -0.5px;
+  right: -0.5px;
+}
+
+.grid--position-vertical.grid--size-24 .grid__label {
+  left: 3.5px;
+  right: 3.5px;
+}
+
+.grid--position-vertical.grid--size-32 .grid__label {
+  left: 7.5px;
+  right: 7.5px;
+}
+
+.grid--position-vertical.grid--size-40 .grid__label {
+  left: 11.5px;
+  right: 11.5px;
+}
+
+.grid--position-vertical.grid--size-48 .grid__label {
+  left: 15.5px;
+  right: 15.5px;
+}
+
+.grid--position-vertical.grid--size-56 .grid__label {
+  left: 19.5px;
+  right: 19.5px;
+}
+
+.grid--position-vertical.grid--size-64 .grid__label {
+  left: 23.5px;
+  right: 23.5px;
+}
+
+/* Horizontal size adjustments */
+.grid--position-horizontal.grid--size-4 .grid__label {
+  left: -2px;
+  right: -2px;
+}
+

@@ -1,0 +1,166 @@
+.card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 16px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 8px;
+  box-shadow: 0px 6px 10px -1px rgba(6, 25, 56, 0.07);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.card--small {
+  height: 310px;
+}
+
+.card--large {
+  height: 310px;
+}
+
+.card__image-container {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.card__image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.card__option-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+}
+
+.card--small .card__option-button {
+  right: 16px;
+}
+
+.card--large .card__option-button {
+  right: 16px;
+}
+
+.card__option-icon {
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='5' r='2' fill='white'/%3E%3Ccircle cx='12' cy='12' r='2' fill='white'/%3E%3Ccircle cx='12' cy='19' r='2' fill='white'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__badge-container {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
+}
+
+.card--small .card__badge-container {
+  bottom: 16px;
+  left: 16px;
+}
+
+.card--large .card__badge-container {
+  bottom: 16px;
+  left: 24px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.card__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-text-2);
+  margin: 0;
+  width: 100%;
+}
+
+.card--small .card__title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__author {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-6);
+  margin: 0;
+  width: 100%;
+}
+
+.card--small .card__author {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-5);
+}
+
+.card__duration {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-5);
+  margin: 0;
+  white-space: pre;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 12px -2px rgba(6, 25, 56, 0.1);
+  transition: all 0.2s ease;
+}
+

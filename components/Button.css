@@ -1,0 +1,211 @@
+.button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  white-space: pre;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button__text {
+  flex-shrink: 0;
+}
+
+.button__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sizes */
+.button--small {
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.button--medium {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--large {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--extra-large {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Types - Primary */
+.button--primary {
+  background-color: var(--color-primary-3);
+  color: white;
+}
+
+.button--primary.button--hover {
+  background-color: var(--color-primary-2);
+}
+
+.button--primary.button--focused {
+  background-color: var(--color-primary-3);
+  border: 2px solid var(--color-primary-8);
+}
+
+.button--primary.button--clicked {
+  background-color: var(--color-primary-1);
+}
+
+.button--primary.button--disabled {
+  background-color: var(--color-text-8);
+  color: var(--color-text-6);
+}
+
+/* Types - Secondary */
+.button--secondary {
+  background: white;
+  border: 0.5px solid var(--color-text-7);
+  color: var(--color-text-2);
+}
+
+.button--secondary.button--hover {
+  background-color: var(--color-text-10);
+}
+
+.button--secondary.button--focused {
+  background: white;
+  border: 1px solid var(--color-text-7);
+  box-shadow: 0px 0px 0px 2px var(--color-primary-8);
+}
+
+.button--secondary.button--disabled {
+  background-color: var(--color-text-10);
+  border-color: var(--color-text-8);
+  color: var(--color-text-6);
+}
+
+/* Types - Tertiary */
+.button--tertiary {
+  background: white;
+  color: var(--color-text-2);
+}
+
+.button--tertiary.button--hover {
+  background-color: var(--color-text-10);
+}
+
+.button--tertiary.button--focused {
+  background: white;
+  border: 2px solid var(--color-primary-8);
+}
+
+.button--tertiary.button--disabled {
+  background-color: var(--color-text-10);
+  color: var(--color-text-6);
+}
+
+/* Types - Success */
+.button--success {
+  background-color: var(--color-system-success-4);
+  color: white;
+}
+
+.button--success.button--hover {
+  background-color: var(--color-system-success-3);
+}
+
+.button--success.button--focused {
+  background-color: var(--color-system-success-5);
+  border: 2px solid var(--color-primary-8);
+}
+
+/* Types - Error */
+.button--error {
+  background-color: var(--color-system-warning-4);
+  color: white;
+}
+
+.button--error.button--hover {
+  background-color: var(--color-system-warning-3);
+}
+
+.button--error.button--focused {
+  background-color: var(--color-system-warning-4);
+  border: 2px solid var(--color-primary-8);
+}
+
+/* Types - Warning */
+.button--warning {
+  background-color: var(--color-system-error-5);
+  color: white;
+}
+
+.button--warning.button--hover {
+  background-color: var(--color-system-error-4);
+}
+
+.button--warning.button--focused {
+  background-color: var(--color-system-error-5);
+  border: 2px solid var(--color-primary-8);
+}
+
+/* Types - Info */
+.button--info {
+  background-color: var(--color-system-info-4);
+  color: white;
+}
+
+.button--info.button--hover {
+  background-color: var(--color-system-info-3);
+}
+
+.button--info.button--focused {
+  background-color: var(--color-system-info-4);
+  border: 2px solid var(--color-primary-8);
+}
+
+/* Icon buttons */
+.button--icon-primary {
+  background-color: var(--color-primary-3);
+  color: white;
+  padding: 8px;
+}
+
+.button--icon-secondary {
+  background: white;
+  border: 0.5px solid var(--color-text-7);
+  color: var(--color-text-2);
+  padding: 8px;
+}
+
+.button--icon-tertiary {
+  background: white;
+  color: var(--color-text-2);
+  padding: 8px;
+}
+
+.button--icon-primary .button__icon,
+.button--icon-secondary .button__icon,
+.button--icon-tertiary .button__icon {
+  width: 18px;
+  height: 18px;
+}
+

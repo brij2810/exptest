@@ -1,0 +1,131 @@
+:root {
+  /* Text Colors */
+  --color-text-1: #111024;
+  --color-text-2: #201F37;
+  --color-text-3: #383751;
+  --color-text-4: #4C4B63;
+  --color-text-5: #6C6B80;
+  --color-text-6: #9D9CAF;
+  --color-text-7: #D1D1DB;
+  --color-text-8: #E1E1E8;
+  --color-text-9: #EDEDF0;
+  --color-text-10: #F5F5F7;
+
+  /* Primary Colors */
+  --color-primary-1: #312E81;
+  --color-primary-2: #3730A3;
+  --color-primary-3: #4338CA;
+  --color-primary-4: #4F46E5;
+  --color-primary-5: #6366F1;
+  --color-primary-6: #818CF8;
+  --color-primary-7: #A5B4FC;
+  --color-primary-8: #C7D2FE;
+  --color-primary-9: #E0E7FF;
+  --color-primary-10: #EEF2FF;
+  --color-primary-11: #F3F6FF;
+
+  /* System Warning Colors */
+  --color-system-warning-1: #7F1D1D;
+  --color-system-warning-2: #991B1B;
+  --color-system-warning-3: #B91C1C;
+  --color-system-warning-4: #DC2626;
+  --color-system-warning-5: #EF4444;
+  --color-system-warning-6: #F87171;
+  --color-system-warning-7: #FCA5A5;
+  --color-system-warning-8: #FECACA;
+  --color-system-warning-9: #FEE2E2;
+  --color-system-warning-10: #FEF2F2;
+
+  /* System Info Colors */
+  --color-system-info-1: #1E3A8A;
+  --color-system-info-2: #1E40AF;
+  --color-system-info-3: #1D4ED8;
+  --color-system-info-4: #2563EB;
+  --color-system-info-5: #3B82F6;
+  --color-system-info-6: #60A5FA;
+  --color-system-info-7: #93C5FD;
+  --color-system-info-8: #BFDBFE;
+  --color-system-info-9: #DBEAFE;
+  --color-system-info-10: #EFF6FF;
+
+  /* System Error Colors */
+  --color-system-error-1: #78350F;
+  --color-system-error-2: #92400E;
+  --color-system-error-3: #B45309;
+  --color-system-error-4: #D97706;
+  --color-system-error-5: #F59E0B;
+  --color-system-error-6: #FBBF24;
+  --color-system-error-7: #FCD34D;
+  --color-system-error-8: #FDE68A;
+  --color-system-error-9: #FEF3C7;
+  --color-system-error-10: #FFFBEB;
+
+  /* System Success Colors */
+  --color-system-success-1: #064E3B;
+  --color-system-success-2: #065F46;
+  --color-system-success-3: #047857;
+  --color-system-success-4: #059669;
+  --color-system-success-5: #00B679;
+  --color-system-success-6: #34D399;
+  --color-system-success-7: #6EE7B7;
+  --color-system-success-8: #A7F3D0;
+  --color-system-success-9: #D1FAE5;
+  --color-system-success-10: #ECFDF5;
+
+  /* Chart Solid Colors */
+  --color-chart-solid-1: #818CF8;
+  --color-chart-solid-2: #FBBF24;
+  --color-chart-solid-3: #F87171;
+  --color-chart-solid-4: #60A5FA;
+  --color-chart-solid-5: #34D399;
+  --color-chart-solid-6: #F372B5;
+
+  /* Chart Light Colors */
+  --color-chart-light-1: #BFC5FB;
+  --color-chart-light-2: #FCDE91;
+  --color-chart-light-3: #FBB7B7;
+  --color-chart-light-4: #AFD1FC;
+  --color-chart-light-5: #99E8CB;
+  --color-chart-light-6: #F8B8D9;
+  --color-chart-light-7: #D2C4FC;
+  --color-chart-light-8: #EEF594;
+  --color-chart-light-9: #A8EBFC;
+  --color-chart-light-10: #E6B9F8;
+
+  /* Accent Pink Colors */
+  --color-accent-pink-1: #831843;
+  --color-accent-pink-2: #9C174D;
+  --color-accent-pink-3: #BE185D;
+  --color-accent-pink-4: #DB2777;
+  --color-accent-pink-5: #EB4898;
+  --color-accent-pink-6: #F372B5;
+  --color-accent-pink-7: #F9A8D4;
+  --color-accent-pink-8: #FACEE7;
+  --color-accent-pink-9: #FCE7F3;
+  --color-accent-pink-10: #FDF2F8;
+
+  /* Accent Purple Colors */
+  --color-accent-purple-1: #4C1D95;
+  --color-accent-purple-2: #5B21B6;
+  --color-accent-purple-3: #6D28D9;
+  --color-accent-purple-4: #7C3AED;
+  --color-accent-purple-5: #8B5CF6;
+  --color-accent-purple-6: #A78BFA;
+  --color-accent-purple-7: #C4B5FD;
+  --color-accent-purple-8: #DDD6FE;
+  --color-accent-purple-9: #EDE9FE;
+  --color-accent-purple-10: #F5F3FF;
+
+  /* Accent Cerulean Blue Colors */
+  --color-accent-cerulean-blue-1: #05ABD6;
+  --color-accent-cerulean-blue-2: #05BBEA;
+  --color-accent-cerulean-blue-3: #1ACBFA;
+  --color-accent-cerulean-blue-4: #53D8FB;
+  --color-accent-cerulean-blue-5: #73DFFC;
+  --color-accent-cerulean-blue-6: #96E7FD;
+  --color-accent-cerulean-blue-7: #AFEDFD;
+  --color-accent-cerulean-blue-8: #C8F3FE;
+  --color-accent-cerulean-blue-9: #DCF7FE;
+  --color-accent-cerulean-blue-10: #F0FCFF;
+}
+

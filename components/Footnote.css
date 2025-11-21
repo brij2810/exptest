@@ -1,0 +1,51 @@
+.footnote {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.footnote--position-top {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footnote--position-bottom {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footnote__text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-2);
+  white-space: pre;
+  margin: 0;
+}
+
+.footnote__line {
+  height: 16px;
+  width: 78px;
+  position: relative;
+  background-color: var(--color-system-warning-5);
+  border-radius: 1px;
+}
+
+.footnote__line--left {
+  /* Default horizontal line */
+}
+
+.footnote__line--right {
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.footnote__line--top {
+  transform: rotate(90deg) scaleY(-100%);
+}
+
+.footnote__line--bottom {
+  transform: rotate(270deg);
+}
+

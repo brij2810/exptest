@@ -1,0 +1,29 @@
+.chat-loading {
+  background-color: var(--color-text-9);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px 8px 8px 0;
+  width: 48px;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+.chat-loading__spinner {
+  width: 32px;
+  height: 32px;
+  color: var(--color-text-6);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

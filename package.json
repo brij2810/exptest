@@ -1,0 +1,27 @@
+{
+  "name": "exptest",
+  "version": "1.0.0",
+  "description": "Subscription Page - Admin Workspace",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "figma:check": "node scripts/figma-sync.js",
+    "figma:watch": "node scripts/figma-watcher.js",
+    "figma:review": "node scripts/ai-review.js",
+    "deploy": "node scripts/deploy.js",
+    "workflow:full": "npm run figma:check && npm run figma:review"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0"
+  }
+}
+

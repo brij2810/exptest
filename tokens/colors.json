@@ -1,0 +1,461 @@
+{
+  "colors": {
+    "text": {
+      "1": {
+        "value": "#111024",
+        "description": "Text color - darkest"
+      },
+      "2": {
+        "value": "#201F37",
+        "description": "Text color - dark"
+      },
+      "3": {
+        "value": "#383751",
+        "description": "Text color - medium dark"
+      },
+      "4": {
+        "value": "#4C4B63",
+        "description": "Text color - medium"
+      },
+      "5": {
+        "value": "#6C6B80",
+        "description": "Text color - medium light"
+      },
+      "6": {
+        "value": "#9D9CAF",
+        "description": "Text color - light"
+      },
+      "7": {
+        "value": "#D1D1DB",
+        "description": "Text color - lighter"
+      },
+      "8": {
+        "value": "#E1E1E8",
+        "description": "Text color - very light"
+      },
+      "9": {
+        "value": "#EDEDF0",
+        "description": "Text color - lightest"
+      },
+      "10": {
+        "value": "#F5F5F7",
+        "description": "Text color - background"
+      }
+    },
+    "primary": {
+      "1": {
+        "value": "#312E81",
+        "description": "Primary color - darkest"
+      },
+      "2": {
+        "value": "#3730A3",
+        "description": "Primary color - dark"
+      },
+      "3": {
+        "value": "#4338CA",
+        "description": "Primary color - medium dark"
+      },
+      "4": {
+        "value": "#4F46E5",
+        "description": "Primary color - base"
+      },
+      "5": {
+        "value": "#6366F1",
+        "description": "Primary color - medium"
+      },
+      "6": {
+        "value": "#818CF8",
+        "description": "Primary color - medium light"
+      },
+      "7": {
+        "value": "#A5B4FC",
+        "description": "Primary color - light"
+      },
+      "8": {
+        "value": "#C7D2FE",
+        "description": "Primary color - lighter"
+      },
+      "9": {
+        "value": "#E0E7FF",
+        "description": "Primary color - very light"
+      },
+      "10": {
+        "value": "#EEF2FF",
+        "description": "Primary color - lightest"
+      },
+      "11": {
+        "value": "#F3F6FF",
+        "description": "Primary color - background"
+      }
+    },
+    "system": {
+      "warning": {
+        "1": {
+          "value": "#7F1D1D",
+          "description": "Warning color - darkest"
+        },
+        "2": {
+          "value": "#991B1B",
+          "description": "Warning color - dark"
+        },
+        "3": {
+          "value": "#B91C1C",
+          "description": "Warning color - medium dark"
+        },
+        "4": {
+          "value": "#DC2626",
+          "description": "Warning color - medium"
+        },
+        "5": {
+          "value": "#EF4444",
+          "description": "Warning color - base"
+        },
+        "6": {
+          "value": "#F87171",
+          "description": "Warning color - medium light"
+        },
+        "7": {
+          "value": "#FCA5A5",
+          "description": "Warning color - light"
+        },
+        "8": {
+          "value": "#FECACA",
+          "description": "Warning color - lighter"
+        },
+        "9": {
+          "value": "#FEE2E2",
+          "description": "Warning color - very light"
+        },
+        "10": {
+          "value": "#FEF2F2",
+          "description": "Warning color - background"
+        }
+      },
+      "info": {
+        "1": {
+          "value": "#1E3A8A",
+          "description": "Info color - darkest"
+        },
+        "2": {
+          "value": "#1E40AF",
+          "description": "Info color - dark"
+        },
+        "3": {
+          "value": "#1D4ED8",
+          "description": "Info color - medium dark"
+        },
+        "4": {
+          "value": "#2563EB",
+          "description": "Info color - medium"
+        },
+        "5": {
+          "value": "#3B82F6",
+          "description": "Info color - base"
+        },
+        "6": {
+          "value": "#60A5FA",
+          "description": "Info color - medium light"
+        },
+        "7": {
+          "value": "#93C5FD",
+          "description": "Info color - light"
+        },
+        "8": {
+          "value": "#BFDBFE",
+          "description": "Info color - lighter"
+        },
+        "9": {
+          "value": "#DBEAFE",
+          "description": "Info color - very light"
+        },
+        "10": {
+          "value": "#EFF6FF",
+          "description": "Info color - background"
+        }
+      },
+      "error": {
+        "1": {
+          "value": "#78350F",
+          "description": "Error color - darkest"
+        },
+        "2": {
+          "value": "#92400E",
+          "description": "Error color - dark"
+        },
+        "3": {
+          "value": "#B45309",
+          "description": "Error color - medium dark"
+        },
+        "4": {
+          "value": "#D97706",
+          "description": "Error color - medium"
+        },
+        "5": {
+          "value": "#F59E0B",
+          "description": "Error color - base"
+        },
+        "6": {
+          "value": "#FBBF24",
+          "description": "Error color - medium light"
+        },
+        "7": {
+          "value": "#FCD34D",
+          "description": "Error color - light"
+        },
+        "8": {
+          "value": "#FDE68A",
+          "description": "Error color - lighter"
+        },
+        "9": {
+          "value": "#FEF3C7",
+          "description": "Error color - very light"
+        },
+        "10": {
+          "value": "#FFFBEB",
+          "description": "Error color - background"
+        }
+      },
+      "success": {
+        "1": {
+          "value": "#064E3B",
+          "description": "Success color - darkest"
+        },
+        "2": {
+          "value": "#065F46",
+          "description": "Success color - dark"
+        },
+        "3": {
+          "value": "#047857",
+          "description": "Success color - medium dark"
+        },
+        "4": {
+          "value": "#059669",
+          "description": "Success color - medium"
+        },
+        "5": {
+          "value": "#00B679",
+          "description": "Success color - base"
+        },
+        "6": {
+          "value": "#34D399",
+          "description": "Success color - medium light"
+        },
+        "7": {
+          "value": "#6EE7B7",
+          "description": "Success color - light"
+        },
+        "8": {
+          "value": "#A7F3D0",
+          "description": "Success color - lighter"
+        },
+        "9": {
+          "value": "#D1FAE5",
+          "description": "Success color - very light"
+        },
+        "10": {
+          "value": "#ECFDF5",
+          "description": "Success color - background"
+        }
+      }
+    },
+    "chart": {
+      "solid": {
+        "1": {
+          "value": "#818CF8",
+          "description": "Chart solid color 1"
+        },
+        "2": {
+          "value": "#FBBF24",
+          "description": "Chart solid color 2"
+        },
+        "3": {
+          "value": "#F87171",
+          "description": "Chart solid color 3"
+        },
+        "4": {
+          "value": "#60A5FA",
+          "description": "Chart solid color 4"
+        },
+        "5": {
+          "value": "#34D399",
+          "description": "Chart solid color 5"
+        },
+        "6": {
+          "value": "#F372B5",
+          "description": "Chart solid color 6"
+        }
+      },
+      "light": {
+        "1": {
+          "value": "#BFC5FB",
+          "description": "Chart light color 1"
+        },
+        "2": {
+          "value": "#FCDE91",
+          "description": "Chart light color 2"
+        },
+        "3": {
+          "value": "#FBB7B7",
+          "description": "Chart light color 3"
+        },
+        "4": {
+          "value": "#AFD1FC",
+          "description": "Chart light color 4"
+        },
+        "5": {
+          "value": "#99E8CB",
+          "description": "Chart light color 5"
+        },
+        "6": {
+          "value": "#F8B8D9",
+          "description": "Chart light color 6"
+        },
+        "7": {
+          "value": "#D2C4FC",
+          "description": "Chart light color 7"
+        },
+        "8": {
+          "value": "#EEF594",
+          "description": "Chart light color 8"
+        },
+        "9": {
+          "value": "#A8EBFC",
+          "description": "Chart light color 9"
+        },
+        "10": {
+          "value": "#E6B9F8",
+          "description": "Chart light color 10"
+        }
+      }
+    },
+    "accent": {
+      "pink": {
+        "1": {
+          "value": "#831843",
+          "description": "Accent pink - darkest"
+        },
+        "2": {
+          "value": "#9C174D",
+          "description": "Accent pink - dark"
+        },
+        "3": {
+          "value": "#BE185D",
+          "description": "Accent pink - medium dark"
+        },
+        "4": {
+          "value": "#DB2777",
+          "description": "Accent pink - medium"
+        },
+        "5": {
+          "value": "#EB4898",
+          "description": "Accent pink - base"
+        },
+        "6": {
+          "value": "#F372B5",
+          "description": "Accent pink - medium light"
+        },
+        "7": {
+          "value": "#F9A8D4",
+          "description": "Accent pink - light"
+        },
+        "8": {
+          "value": "#FACEE7",
+          "description": "Accent pink - lighter"
+        },
+        "9": {
+          "value": "#FCE7F3",
+          "description": "Accent pink - very light"
+        },
+        "10": {
+          "value": "#FDF2F8",
+          "description": "Accent pink - background"
+        }
+      },
+      "purple": {
+        "1": {
+          "value": "#4C1D95",
+          "description": "Accent purple - darkest"
+        },
+        "2": {
+          "value": "#5B21B6",
+          "description": "Accent purple - dark"
+        },
+        "3": {
+          "value": "#6D28D9",
+          "description": "Accent purple - medium dark"
+        },
+        "4": {
+          "value": "#7C3AED",
+          "description": "Accent purple - medium"
+        },
+        "5": {
+          "value": "#8B5CF6",
+          "description": "Accent purple - base"
+        },
+        "6": {
+          "value": "#A78BFA",
+          "description": "Accent purple - medium light"
+        },
+        "7": {
+          "value": "#C4B5FD",
+          "description": "Accent purple - light"
+        },
+        "8": {
+          "value": "#DDD6FE",
+          "description": "Accent purple - lighter"
+        },
+        "9": {
+          "value": "#EDE9FE",
+          "description": "Accent purple - very light"
+        },
+        "10": {
+          "value": "#F5F3FF",
+          "description": "Accent purple - background"
+        }
+      },
+      "ceruleanBlue": {
+        "1": {
+          "value": "#05ABD6",
+          "description": "Accent cerulean blue - darkest"
+        },
+        "2": {
+          "value": "#05BBEA",
+          "description": "Accent cerulean blue - dark"
+        },
+        "3": {
+          "value": "#1ACBFA",
+          "description": "Accent cerulean blue - medium dark"
+        },
+        "4": {
+          "value": "#53D8FB",
+          "description": "Accent cerulean blue - medium"
+        },
+        "5": {
+          "value": "#73DFFC",
+          "description": "Accent cerulean blue - base"
+        },
+        "6": {
+          "value": "#96E7FD",
+          "description": "Accent cerulean blue - medium light"
+        },
+        "7": {
+          "value": "#AFEDFD",
+          "description": "Accent cerulean blue - light"
+        },
+        "8": {
+          "value": "#C8F3FE",
+          "description": "Accent cerulean blue - lighter"
+        },
+        "9": {
+          "value": "#DCF7FE",
+          "description": "Accent cerulean blue - very light"
+        },
+        "10": {
+          "value": "#F0FCFF",
+          "description": "Accent cerulean blue - background"
+        }
+      }
+    }
+  }
+}
+

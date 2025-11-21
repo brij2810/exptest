@@ -1,0 +1,133 @@
+.dialog {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 25px 50px -12px rgba(6, 25, 56, 0.25);
+  box-sizing: border-box;
+}
+
+.dialog--small {
+  width: 600px;
+}
+
+.dialog--medium {
+  width: 800px;
+  height: 360px;
+}
+
+.dialog--large {
+  width: 976px;
+  height: 456px;
+}
+
+.dialog--scroll {
+  width: 868px;
+  height: 497px;
+}
+
+.dialog__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 26px 24px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0px 1px 0px 0px #e5e7eb;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.dialog__title {
+  flex: 1;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-text-2);
+  margin: 0;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.dialog__close {
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dialog__close-icon {
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18M6 6L18 18' stroke='%239D9CAF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dialog__close:hover .dialog__close-icon {
+  opacity: 0.7;
+}
+
+.dialog__content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 24px 40px 24px;
+  width: 100%;
+  flex-shrink: 0;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.dialog--scroll .dialog__content {
+  gap: 24px;
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+.dialog__default-content {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-3);
+  margin: 0;
+  flex: 1;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.dialog--scroll .dialog__default-content {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+.dialog__footer {
+  background-color: var(--color-text-9);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 16px 16px 12px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px -1px 0px 0px #e5e7eb;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.dialog__actions {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 1px;
+  min-width: 1px;
+}
+

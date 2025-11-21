@@ -1,0 +1,200 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.input__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: white;
+  border: 1px solid var(--color-text-7);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.input__field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  padding: 0;
+  min-width: 0;
+}
+
+.input__field::placeholder {
+  color: var(--color-text-6);
+}
+
+.input__field:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-6);
+}
+
+.input__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-6);
+}
+
+.input__icon--left {
+  margin-left: 12px;
+}
+
+.input__icon--right {
+  margin-right: 12px;
+}
+
+.input__icon--prefix {
+  margin-left: 12px;
+}
+
+.input__icon--suffix {
+  margin-right: 12px;
+}
+
+.input__action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 12px;
+  color: var(--color-text-6);
+}
+
+.input__action:hover {
+  color: var(--color-text-2);
+}
+
+.input__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-6);
+  margin: 0;
+}
+
+.input__description--error {
+  color: var(--color-system-warning-5);
+}
+
+/* Sizes */
+.input--34 {
+  padding: 7px 12px;
+  min-height: 34px;
+}
+
+.input--40 {
+  padding: 10px 12px;
+  min-height: 40px;
+}
+
+.input--34 .input__field {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.input--40 .input__field {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* States - Default */
+.input--default {
+  border-color: var(--color-text-7);
+}
+
+.input--default:hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Hover */
+.input--hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Focused */
+.input--focused {
+  border-color: var(--color-primary-5);
+  box-shadow: 0px 0px 0px 2px var(--color-primary-8);
+}
+
+/* States - Error */
+.input--error {
+  border-color: var(--color-system-warning-5);
+}
+
+.input--error:hover {
+  border-color: var(--color-system-warning-5);
+}
+
+/* States - Disabled */
+.input--disabled {
+  background-color: var(--color-text-10);
+  border-color: var(--color-text-7);
+  cursor: not-allowed;
+}
+
+.input--disabled .input__field {
+  color: var(--color-text-6);
+}
+
+.input--disabled .input__icon {
+  color: var(--color-text-7);
+}
+
+/* Type variants */
+.input--left-icon {
+  padding-left: 0;
+}
+
+.input--right-icon {
+  padding-right: 0;
+}
+
+.input--prefix {
+  padding-left: 0;
+}
+
+.input--suffix {
+  padding-right: 0;
+}
+
+.input--suffix-prefix {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.input--number {
+  /* Number input specific styles */
+}
+
+.input--copy-link {
+  padding-right: 0;
+}
+

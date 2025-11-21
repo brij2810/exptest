@@ -1,0 +1,43 @@
+name: Figma Design Sync Workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Check for changes every 15 minutes
+    - cron: '*/15 * * * *'
+  repository_dispatch:
+    types: [figma-updated]
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run Figma Sync Check
+        env:
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+        run: npm run figma:check-changes
+      
+      - name: Create Issue for Changes
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Figma Design Changes Detected',
+              body: 'New changes detected in Figma. Please review and approve implementation.',
+              labels: ['figma-update', 'needs-review']
+            })
+

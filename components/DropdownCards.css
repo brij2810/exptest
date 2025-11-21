@@ -1,0 +1,119 @@
+.dropdown-cards {
+  background-color: white;
+  box-shadow: 0px 25px 50px -12px rgba(6, 25, 56, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+  width: 452px;
+  box-sizing: border-box;
+}
+
+.dropdown-cards--type-1 {
+  padding-bottom: 16px;
+}
+
+.dropdown-cards--type-2 {
+  padding-bottom: 16px;
+}
+
+.dropdown-cards--type-3 {
+  padding: 12px 0;
+}
+
+.dropdown-cards__item {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  cursor: pointer;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-cards__item--active {
+  background-color: var(--color-text-9);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 8px;
+}
+
+.dropdown-cards__item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-text-9);
+  padding: 10px 16px;
+  border-radius: 8px;
+  justify-content: center;
+  flex: 1;
+}
+
+.dropdown-cards__image {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-text-7);
+}
+
+.dropdown-cards__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown-cards__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-5);
+}
+
+.dropdown-cards__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.dropdown-cards__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-2);
+}
+
+.dropdown-cards__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+}
+
+/* Type 2 specific styles */
+.dropdown-cards--type-2 .dropdown-cards__item {
+  padding-left: 24px;
+}
+
+.dropdown-cards--type-2 .dropdown-cards__item--active {
+  padding: 8px;
+  margin: 0 8px;
+}
+
+/* Type 3 specific styles */
+.dropdown-cards--type-3 .dropdown-cards__item {
+  padding-left: 24px;
+}
+
+.dropdown-cards--type-3 .dropdown-cards__item--active {
+  padding: 8px;
+  margin: 0 8px;
+}
+

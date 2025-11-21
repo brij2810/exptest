@@ -1,0 +1,110 @@
+.merchandising-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 6px 10px -1px rgba(6, 25, 56, 0.07);
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.merchandising-card__image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.merchandising-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.merchandising-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-text-8);
+}
+
+.merchandising-card__badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+.merchandising-card__badge--pin {
+  background-color: var(--color-primary-5);
+}
+
+.merchandising-card__badge--boost {
+  background-color: var(--color-system-success-5);
+}
+
+.merchandising-card__badge--bury {
+  background-color: var(--color-system-warning-5);
+}
+
+.merchandising-card__content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.merchandising-card__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-2);
+  margin: 0;
+}
+
+.merchandising-card__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+.merchandising-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.merchandising-card__price {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-2);
+}
+
+.merchandising-card__tags {
+  display: flex;
+  gap: 4px;
+}
+
+.merchandising-card__tag {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--color-text-9);
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-4);
+}
+

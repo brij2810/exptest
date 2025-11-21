@@ -1,0 +1,171 @@
+.activity-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 451px;
+}
+
+.activity-timeline--detail {
+  gap: 16px;
+}
+
+.activity-timeline__header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-timeline__icon-container {
+  background-color: var(--color-system-success-5);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.activity-timeline__icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.activity-timeline__icon--trophy {
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 0L9.5 5.5H14L10 8.5L12 14L7.5 11L3 14L5 8.5L1 5.5H5.5L7.5 0Z' fill='white'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.activity-timeline__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.activity-timeline__description {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-timeline__description p {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  margin: 0;
+}
+
+.activity-timeline__description p span {
+  color: var(--color-system-info-5);
+}
+
+.activity-timeline__description p span:last-child {
+  font-weight: 500;
+}
+
+.activity-timeline__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-timeline__detail-card {
+  background-color: var(--color-text-10);
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  padding: 16px 15px;
+  border-radius: 8px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-timeline__detail-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-timeline__detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.activity-timeline__detail-label {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-5);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.activity-timeline__detail-value {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  margin: 0;
+  width: min-content;
+}
+
+.activity-timeline__copy-button {
+  background: white;
+  border: 0.5px solid var(--color-text-7);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  height: 30px;
+  width: 73px;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  text-align: center;
+  white-space: pre;
+}
+
+.activity-timeline__copy-button:hover {
+  background-color: var(--color-text-10);
+}
+

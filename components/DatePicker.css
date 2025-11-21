@@ -1,0 +1,130 @@
+.datepicker-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.datepicker__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+.datepicker__instruction {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-6);
+  margin: 0;
+}
+
+.datepicker__instruction--error {
+  color: var(--color-system-warning-5);
+}
+
+.datepicker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: white;
+  border: 1px solid var(--color-text-7);
+  transition: all 0.2s ease;
+  width: 340px;
+}
+
+.datepicker__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  padding: 0;
+  min-width: 0;
+}
+
+.datepicker__input::placeholder {
+  color: var(--color-text-6);
+}
+
+.datepicker__input:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-6);
+}
+
+.datepicker__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-6);
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/* Sizes */
+.datepicker--34 {
+  padding: 7px 12px;
+  min-height: 34px;
+}
+
+.datepicker--40 {
+  padding: 10px 12px;
+  min-height: 40px;
+}
+
+/* States - Default */
+.datepicker--default {
+  border-color: var(--color-text-7);
+}
+
+.datepicker--default:hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Hover */
+.datepicker--hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Focused */
+.datepicker--focused {
+  border-color: var(--color-primary-5);
+  box-shadow: 0px 0px 0px 2px var(--color-primary-8);
+}
+
+/* States - Error */
+.datepicker--error {
+  border-color: var(--color-system-warning-5);
+}
+
+.datepicker--error:hover {
+  border-color: var(--color-system-warning-5);
+}
+
+/* States - Disabled */
+.datepicker--disabled {
+  background-color: var(--color-text-10);
+  border-color: var(--color-text-7);
+  cursor: not-allowed;
+}
+
+.datepicker--disabled .datepicker__input {
+  color: var(--color-text-6);
+}
+
+.datepicker--disabled .datepicker__icon {
+  color: var(--color-text-7);
+}
+

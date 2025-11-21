@@ -1,0 +1,117 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.textarea__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+.textarea__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-6);
+  margin: 0;
+}
+
+.textarea__description--error {
+  color: var(--color-system-warning-5);
+}
+
+.textarea {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: white;
+  border: 1px solid var(--color-text-7);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.textarea__field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-2);
+  padding: 0;
+  resize: vertical;
+  min-width: 0;
+  width: 100%;
+}
+
+.textarea__field::placeholder {
+  color: var(--color-text-6);
+}
+
+.textarea__field:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-6);
+}
+
+/* Sizes */
+.textarea--34 .textarea__field {
+  padding: 7px 12px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.textarea--40 .textarea__field {
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* States - Default */
+.textarea--default {
+  border-color: var(--color-text-7);
+}
+
+.textarea--default:hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Hover */
+.textarea--hover {
+  border-color: var(--color-primary-6);
+}
+
+/* States - Focused */
+.textarea--focused {
+  border-color: var(--color-primary-5);
+  box-shadow: 0px 0px 0px 2px var(--color-primary-8);
+}
+
+/* States - Error */
+.textarea--error {
+  border-color: var(--color-system-warning-5);
+}
+
+.textarea--error:hover {
+  border-color: var(--color-system-warning-5);
+}
+
+/* States - Disabled */
+.textarea--disabled {
+  background-color: var(--color-text-10);
+  border-color: var(--color-text-7);
+  cursor: not-allowed;
+}
+
+.textarea--disabled .textarea__field {
+  color: var(--color-text-6);
+}
+

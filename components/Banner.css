@@ -1,0 +1,122 @@
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  box-sizing: border-box;
+}
+
+.banner--link {
+  gap: 4px;
+  justify-content: center;
+}
+
+.banner--icon {
+  gap: 8px;
+}
+
+.banner__content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.banner__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.banner__icon--error {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='10' stroke='white' stroke-width='2'/%3E%3Cpath d='M12 8V12M12 16H12.01' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__icon--info {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='10' stroke='white' stroke-width='2'/%3E%3Cpath d='M12 16V12M12 8H12.01' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__icon--success {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7088 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 4L12 14.01L9 11.01' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__icon--warning {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L2 22H22L12 2Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 9V13M12 17H12.01' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__icon--default {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4H20V20H4V4Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 9H15M9 15H15' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__message {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  text-align: center;
+  white-space: pre;
+  margin: 0;
+}
+
+.banner__link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  white-space: pre;
+}
+
+.banner__link:hover {
+  opacity: 0.8;
+}
+
+/* Type variants */
+.banner--error {
+  background-color: var(--color-system-warning-5);
+}
+
+.banner--info {
+  background-color: var(--color-system-info-5);
+}
+
+.banner--success {
+  background-color: var(--color-system-success-5);
+}
+
+.banner--warning {
+  background-color: var(--color-system-error-5);
+}
+
+.banner--warning .banner__message,
+.banner--warning .banner__link {
+  color: var(--color-text-2);
+}
+
+.banner--warning .banner__icon--warning {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L2 22H22L12 2Z' stroke='%23201F37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 9V13M12 17H12.01' stroke='%23201F37' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.banner--default {
+  background-color: var(--color-text-2);
+}
+

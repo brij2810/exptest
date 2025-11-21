@@ -1,0 +1,73 @@
+.carousel {
+  position: relative;
+}
+
+/* Rounded type */
+.carousel--rounded {
+  border-radius: 50%;
+}
+
+.carousel--rounded.carousel--large {
+  width: 12px;
+  height: 12px;
+}
+
+.carousel--rounded.carousel--small {
+  width: 8px;
+  height: 8px;
+}
+
+.carousel--rounded.carousel--active {
+  background-color: var(--color-primary-5);
+}
+
+.carousel--rounded.carousel--inactive {
+  background-color: var(--color-text-6);
+}
+
+/* Rectangular type */
+.carousel--rectangular {
+  border-radius: 0;
+}
+
+.carousel--rectangular.carousel--large {
+  width: 33px;
+  height: 5px;
+}
+
+.carousel--rectangular.carousel--small {
+  width: 26px;
+  height: 3px;
+}
+
+.carousel--rectangular.carousel--active {
+  background-color: var(--color-primary-5);
+}
+
+.carousel--rectangular.carousel--inactive {
+  background-color: var(--color-text-6);
+}
+
+/* Circular type */
+.carousel--circular {
+  border-radius: 1000px;
+}
+
+.carousel--circular.carousel--large {
+  width: 34px;
+  height: 6px;
+}
+
+.carousel--circular.carousel--small {
+  width: 27px;
+  height: 3px;
+}
+
+.carousel--circular.carousel--active {
+  background-color: var(--color-primary-5);
+}
+
+.carousel--circular.carousel--inactive {
+  background-color: var(--color-text-6);
+}
+

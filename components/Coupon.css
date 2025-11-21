@@ -1,0 +1,50 @@
+.coupon {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-style: dashed;
+}
+
+.coupon__text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-text-2);
+  text-align: center;
+  white-space: pre;
+  margin: 0;
+}
+
+/* Size variants */
+.coupon--large .coupon__text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.coupon--small .coupon__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Type variants */
+.coupon--gray {
+  background-color: var(--color-text-9);
+  border-color: var(--color-text-6);
+  border-width: 1px;
+}
+
+.coupon--stroke {
+  background-color: transparent;
+  border-color: var(--color-text-6);
+  border-width: 1px;
+}
+
+.coupon--color {
+  background-color: var(--color-system-error-9);
+  border-color: var(--color-system-error-4);
+  border-width: 1px;
+}
+
