@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Usage.css';
-import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
+import { Header } from '../../components/Header';
+import { Sidebar } from '../../components/Sidebar';
 
 export interface UsageProps {
   onNavigate?: (page: 'subscription' | 'invoices' | 'usage') => void;

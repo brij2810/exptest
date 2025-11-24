@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Subscription.css';
-import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
-import { Button } from '../components/Button';
+import { Header } from '../../components/Header';
+import { Sidebar } from '../../components/Sidebar';
+import { Button } from '../../components/Button';
 
 export interface SubscriptionProps {
   onNavigate?: (page: 'subscription' | 'invoices' | 'usage') => void;

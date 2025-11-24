@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Invoices from './Invoices';
-import Subscription from './Subscription';
-import Usage from './Usage';
+import Invoices from './Pages/Invoices';
+import Subscription from './Pages/Subscription';
+import Usage from './Pages/Usage';
 import './tokens/colors.css';
 import './typography/tokens.css';
 import './App.css';

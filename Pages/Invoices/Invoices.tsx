@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Invoices.css';
-import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
-import { Table, TableColumn, TableRow } from '../components/Table';
+import { Header } from '../../components/Header';
+import { Sidebar } from '../../components/Sidebar';
+import { Table, TableColumn, TableRow } from '../../components/Table';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
 
