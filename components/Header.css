@@ -1,10 +1,14 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 250px;
   right: 0;
   width: calc(100% - 250px);
+  height: 49px;
   background: white;
   border-bottom: 1px solid var(--color-text-9);
+  z-index: 99;
+  box-sizing: border-box;
 }
 
 .header__content {

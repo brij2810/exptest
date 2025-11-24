@@ -2,11 +2,12 @@ name: Figma Design Sync Workflow
 
 on:
   workflow_dispatch:
-  schedule:
-    # Check for changes every 15 minutes
-    - cron: '*/15 * * * *'
-  repository_dispatch:
-    types: [figma-updated]
+  # DISABLED: Auto-sync disabled to prevent excessive GitHub emails
+  # schedule:
+  #   # Check for changes every 15 minutes
+  #   - cron: '*/15 * * * *'
+  # repository_dispatch:
+  #   types: [figma-updated]
 
 jobs:
   detect-changes:
@@ -26,7 +27,7 @@ jobs:
         env:
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
           FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
-        run: npm run figma:check-changes
+        run: npm run figma:check
       
       - name: Create Issue for Changes
         if: failure()

@@ -3,14 +3,22 @@
  * Continuously monitors Figma for changes
  */
 
+// Load environment variables from .env file
+try {
+  require('./load-env.js');
+} catch (e) {
+  // .env file might not exist yet, that's OK
+}
+
 const { checkForChanges } = require('./figma-sync');
 const { prepareAIReview } = require('./ai-review');
 
-const CHECK_INTERVAL = 15 * 60 * 1000; // 15 minutes in milliseconds
+const CHECK_INTERVAL = 1000; // 1 second in milliseconds
 
 async function watchFigma() {
   console.log('👀 Starting Figma design watcher...');
-  console.log(`   Checking every ${CHECK_INTERVAL / 1000 / 60} minutes`);
+  console.log(`   Checking every ${CHECK_INTERVAL / 1000} second(s)`);
+  console.log('   ⚠️  Note: Very frequent checks may hit API rate limits');
   console.log('   Press Ctrl+C to stop\n');
 
   // Initial check

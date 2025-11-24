@@ -29,10 +29,11 @@ async function deploy() {
     process.exit(1);
   }
 
-  // Step 2: Run linter
-  if (!runCommand('npm run lint', 'Running linter')) {
-    console.log('⚠️  Linter warnings found, but continuing...');
-  }
+  // Step 2: Run linter (optional - skip if not configured)
+  // Uncomment if you have a lint script in package.json
+  // if (!runCommand('npm run lint', 'Running linter')) {
+  //   console.log('⚠️  Linter warnings found, but continuing...');
+  // }
 
   // Step 3: Build project
   if (!runCommand('npm run build', 'Building project')) {

@@ -16,47 +16,54 @@ export interface TableProps {
   columns: TableColumn[];
   rows: TableRow[];
   className?: string;
+  onRowHover?: (rowIndex: number | null) => void;
+  hoveredRowIndex?: number | null;
 }
 
 export const Table: React.FC<TableProps> = ({
   columns,
   rows,
   className = '',
+  onRowHover,
+  hoveredRowIndex,
 }) => {
   return (
     <div className={`table-container ${className}`}>
-      <table className="table">
-        <thead className="table__head">
-          <tr className="table__row">
-            {columns.map((column) => (
-              <th
-                key={column.key}
-                className={`table__header ${column.align ? `table__header--${column.align}` : ''}`}
-                style={column.width ? { width: column.width } : undefined}
-              >
-                {column.label}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="table__body">
-          {rows.map((row, rowIndex) => (
-            <tr
-              key={rowIndex}
-              className={`table__row ${rowIndex < rows.length - 1 ? 'table__row--bordered' : ''}`}
+      <div className="table">
+        {columns.map((column, columnIndex) => {
+          const isLastColumn = columnIndex === columns.length - 1;
+          return (
+            <div
+              key={column.key}
+              className={`table__column ${isLastColumn ? 'table__column--last' : ''}`}
+              style={column.width ? { width: column.width } : undefined}
             >
-              {columns.map((column) => (
-                <td
-                  key={column.key}
-                  className={`table__cell ${column.align ? `table__cell--${column.align}` : ''}`}
+              {/* Column Header */}
+              <div className={`table__header ${column.align ? `table__header--${column.align}` : ''}`}>
+                <div className={`table__header-content ${isLastColumn ? 'table__header-content--last' : ''}`}>
+                  {column.label}
+                </div>
+              </div>
+              
+              {/* Column Cells */}
+              {rows.map((row, rowIndex) => (
+                <div
+                  key={rowIndex}
+                  className={`table__cell-wrapper ${rowIndex < rows.length - 1 ? 'table__cell-wrapper--bordered' : ''}`}
+                  data-row-index={rowIndex}
+                  data-hovered={hoveredRowIndex === rowIndex ? 'true' : 'false'}
+                  onMouseEnter={() => onRowHover?.(rowIndex)}
+                  onMouseLeave={() => onRowHover?.(null)}
                 >
-                  {row[column.key]}
-                </td>
+                  <div className={`table__cell ${column.align ? `table__cell--${column.align}` : ''} ${isLastColumn ? 'table__cell--last' : ''}`}>
+                    {row[column.key]}
+                  </div>
+                </div>
               ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

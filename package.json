@@ -6,6 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "setup:env": "node scripts/setup-env.js",
+    "find:nodeid": "node scripts/find-node-id.js",
     "figma:check": "node scripts/figma-sync.js",
     "figma:watch": "node scripts/figma-watcher.js",
     "figma:review": "node scripts/ai-review.js",

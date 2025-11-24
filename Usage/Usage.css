@@ -1,0 +1,359 @@
+/* ============================================
+   USAGE PAGE STYLES
+   ============================================ */
+
+/* --------------------------------------------
+   Page Layout
+   -------------------------------------------- */
+.usage-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-text-10);
+  display: block;
+  overflow: visible;
+}
+
+.usage-page__main {
+  margin-left: 250px;
+  margin-top: 49px;
+  width: calc(100% - 250px);
+  padding: 0;
+  box-sizing: border-box;
+  min-height: calc(100vh - 49px);
+  position: relative;
+  z-index: 1;
+}
+
+.usage-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------
+   Header Section
+   -------------------------------------------- */
+.usage-page__header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.usage-page__header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.usage-page__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--color-text-2);
+  margin: 0;
+}
+
+.usage-page__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+/* --------------------------------------------
+   Date Picker
+   -------------------------------------------- */
+.usage-page__date-picker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid var(--color-text-7);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.usage-page__date-picker:hover {
+  background: var(--color-text-10);
+  border-color: var(--color-text-6);
+}
+
+.usage-page__date-text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-2);
+  white-space: nowrap;
+}
+
+.usage-page__date-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-6);
+}
+
+.usage-page__date-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* --------------------------------------------
+   Stats Grid
+   -------------------------------------------- */
+.usage-page__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+/* --------------------------------------------
+   Stat Card
+   -------------------------------------------- */
+.usage-stat-card {
+  background: white;
+  border: 1px solid var(--color-text-9);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.usage-stat-card__header {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.usage-stat-card__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--color-text-4);
+  white-space: nowrap;
+}
+
+.usage-stat-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  color: var(--color-text-5);
+  cursor: help;
+}
+
+.usage-stat-card__info svg {
+  width: 14px;
+  height: 14px;
+}
+
+.usage-stat-card__data {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.usage-stat-card__values {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.usage-stat-card__value {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--color-text-2);
+  white-space: nowrap;
+}
+
+.usage-stat-card__limit {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  flex: 1;
+}
+
+.usage-stat-card__progress {
+  background: var(--color-text-9);
+  border-radius: 4px;
+  height: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.usage-stat-card__progress-bar {
+  background: var(--color-primary-1);
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  min-width: 2px;
+}
+
+/* --------------------------------------------
+   Chart Section
+   -------------------------------------------- */
+.usage-page__chart {
+  background: white;
+  border: 1px solid var(--color-text-9);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.usage-page__chart-header {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.usage-page__chart-title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--color-text-4);
+  white-space: nowrap;
+}
+
+.usage-page__chart-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  color: var(--color-text-5);
+  cursor: help;
+}
+
+.usage-page__chart-info svg {
+  width: 14px;
+  height: 14px;
+}
+
+.usage-page__chart-legend {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.usage-page__chart-legend-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.usage-page__chart-legend-label-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.usage-page__chart-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.usage-page__chart-legend-dot--current {
+  background: var(--color-primary-6);
+}
+
+.usage-page__chart-legend-dot--previous {
+  background: #FBBF24;
+}
+
+.usage-page__chart-legend-label {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  white-space: nowrap;
+}
+
+.usage-page__chart-legend-value {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-text-1);
+  white-space: nowrap;
+  padding-left: 18px;
+}
+
+.usage-page__chart-container {
+  width: 100%;
+  height: 258px;
+  position: relative;
+}
+
+.usage-page__chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--color-text-10);
+  border-radius: 4px;
+  border: 1px dashed var(--color-text-8);
+}
+
+.usage-page__chart-placeholder-text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+/* --------------------------------------------
+   Responsive Adjustments
+   -------------------------------------------- */
+@media (max-width: 1400px) {
+  .usage-page__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-page__stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .usage-page__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

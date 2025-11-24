@@ -57,21 +57,21 @@
 
 /* Types - Primary */
 .button--primary {
-  background-color: var(--color-primary-3);
+  background-color: var(--color-primary-1);
   color: white;
 }
 
 .button--primary.button--hover {
-  background-color: var(--color-primary-2);
+  background-color: var(--color-primary-3);
 }
 
 .button--primary.button--focused {
-  background-color: var(--color-primary-3);
+  background-color: var(--color-primary-1);
   border: 2px solid var(--color-primary-8);
 }
 
 .button--primary.button--clicked {
-  background-color: var(--color-primary-1);
+  background-color: var(--color-primary-2);
 }
 
 .button--primary.button--disabled {
@@ -184,7 +184,7 @@
 
 /* Icon buttons */
 .button--icon-primary {
-  background-color: var(--color-primary-3);
+  background-color: var(--color-primary-1);
   color: white;
   padding: 8px;
 }

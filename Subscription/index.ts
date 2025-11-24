@@ -3,6 +3,6 @@
  * Admin - Workspace - Environment (Subscription Page)
  */
 
-export { Subscription } from './Subscription';
+export { Subscription, type SubscriptionProps } from './Subscription';
 export { default } from './Subscription';
 

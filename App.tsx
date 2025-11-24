@@ -1,19 +1,25 @@
-import React from 'react';
-import { Subscription } from './Subscription';
+import React, { useState } from 'react';
+import Invoices from './Invoices';
+import Subscription from './Subscription';
+import Usage from './Usage';
 import './tokens/colors.css';
 import './typography/tokens.css';
 import './App.css';
 
+type Page = 'subscription' | 'invoices' | 'usage';
+
 function App() {
-  console.log('App component rendering');
-  
+  const [currentPage, setCurrentPage] = useState<Page>('usage');
+
+  const handleNavigate = (page: Page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <div className="app" style={{ minHeight: '100vh', background: '#f5f5f7' }}>
-      {/* Debug: Remove this div once page loads */}
-      <div style={{ padding: '10px', background: '#fff', border: '1px solid #ccc', margin: '10px' }}>
-        <strong>Debug:</strong> If you see this, React is working. Check console for errors.
-      </div>
-      <Subscription />
+      {currentPage === 'subscription' && <Subscription onNavigate={handleNavigate} />}
+      {currentPage === 'invoices' && <Invoices onNavigate={handleNavigate} />}
+      {currentPage === 'usage' && <Usage onNavigate={handleNavigate} />}
     </div>
   );
 }

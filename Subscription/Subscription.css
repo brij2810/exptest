@@ -6,15 +6,19 @@
 }
 
 .subscription-page__main {
-  position: absolute;
-  left: 274px;
-  top: 70px;
-  width: calc(100% - 274px);
+  margin-left: 270px;
+  margin-top: 49px;
+  width: calc(100% - 250px);
   padding: 0;
+  box-sizing: border-box;
 }
+
+
 
 .subscription-page__content {
   display: flex;
+  margin-top: 20px;
+  margin-right: 32px;
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
@@ -23,6 +27,7 @@
 
 .subscription-page__header {
   display: flex;
+  margin-top: 20px;
   flex-direction: column;
   gap: 4px;
   width: 100%;
@@ -48,6 +53,7 @@
 
 .subscription-page__cards {
   display: flex;
+  margin-bottom: 24px;
   flex-direction: column;
   gap: 16px;
   width: 100%;
@@ -57,6 +63,10 @@
   background: white;
   border: 1px solid var(--color-text-9);
   border-radius: 4px;
+  width: 100%;
+}
+
+.subscription-card__content {
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -70,13 +80,6 @@
   justify-content: space-between;
 }
 
-.subscription-card__workspace-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .subscription-card__workspace-name {
   font-family: 'SF Pro Text', sans-serif;
   font-size: 16px;
@@ -84,56 +87,189 @@
   line-height: 20px;
   color: var(--color-text-2);
   margin: 0;
-}
-
-.subscription-card__upgrade-button {
-  background-color: var(--color-primary-4);
-  padding: 10px 16px !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  font-weight: 500 !important;
-}
-
-.subscription-card__upgrade-button:hover {
-  background-color: var(--color-primary-3);
-}
-
-.subscription-card__table {
-  width: 100%;
-}
-
-.addon-card {
-  background: white;
-  border: 1px solid var(--color-text-9);
-  border-radius: 4px;
-  padding: 24px;
-}
-
-.addon-card__content {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.addon-card__text {
   flex: 1;
+}
+
+.subscription-card__manage-button {
+  background-color: var(--color-primary-1) !important;
+  color: white !important;
+  padding: 7px 12px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 500 !important;
+  border-radius: 4px !important;
+  border: none !important;
+}
+
+.subscription-card__manage-button:hover {
+  background-color: var(--color-primary-3) !important;
+}
+
+.subscription-card__summary {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-text-9);
+}
+
+.subscription-card__summary-item {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  justify-content: center;
+  gap: 8px;
 }
 
-.addon-card__title {
+.subscription-card__summary-label {
   font-family: 'SF Pro Text', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  color: var(--color-text-2);
-  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--color-text-5);
 }
 
-.addon-card__description {
+.subscription-card__summary-value {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--color-text-2);
+}
+
+.subscription-card__summary-amount {
+  font-weight: 600;
+}
+
+.subscription-card__summary-period {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--color-text-5);
+  margin-left: 4px;
+}
+
+.subscription-card__table-container {
+  border: 1px solid var(--color-text-9);
+  border-radius: 4px;
+  overflow: hidden;
+  width: -webkit-fill-available;
+}
+
+.subscription-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.subscription-table__header {
+  background: white;
+  border-bottom: 1px solid var(--color-text-9);
+  padding: 13px 16px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--color-text-5);
+  text-align: left;
+}
+
+.subscription-table__header--expand {
+  width: 32px;
+  padding: 13px 0;
+  padding-left: 16px;
+  padding-right: 0;
+  text-align: center;
+}
+
+.subscription-table__header--product {
+  text-align: left;
+}
+
+.subscription-table__header--type {
+  text-align: left;
+}
+
+.subscription-table__header--price {
+  text-align: right;
+  width: 200px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.subscription-table__row {
+  border-bottom: 1px solid var(--color-text-9);
+}
+
+.subscription-table__row:last-child {
+  border-bottom: none;
+}
+
+.subscription-table__row--nested {
+  background: white;
+}
+
+.subscription-table__cell {
+  padding: 18px 16px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-2);
+  vertical-align: middle;
+}
+
+.subscription-table__cell--expand {
+  width: 32px;
+  padding: 19px 0 19px 16px;
+  text-align: left;
+}
+
+.subscription-table__cell--product {
+  text-align: left;
+}
+
+.subscription-table__cell--type {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.subscription-table__cell--price {
+  text-align: right;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.subscription-table__cell--nested {
+  color: var(--color-text-5);
+  padding-left: 16px;
+}
+
+.subscription-table__expand-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.667px;
+  height: 10.667px;
+}
+
+.subscription-table__expand-button:hover {
+  opacity: 0.8;
+}
+
+.subscription-card__footer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 20px;
+}
+
+.subscription-card__disclaimer {
+  flex: 1;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -142,25 +278,86 @@
   margin: 0;
 }
 
-.addon-card__button {
-  flex-shrink: 0;
-  background-color: var(--color-primary-9);
-  border: 1px solid var(--color-primary-2);
-  border-width: 1px 1px 2px;
-  color: var(--color-primary-2);
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-family: 'SF Pro Text', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: pre;
+.subscription-card__total {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
-.addon-card__button:hover {
-  background-color: var(--color-primary-9);
-  border-color: var(--color-primary-1);
+.subscription-card__total-label {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-text-2);
+  white-space: nowrap;
+}
+
+.subscription-card__total-value {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-text-2);
+  white-space: nowrap;
+}
+
+.subscription-addon {
+  background: white;
+  border: 1px solid var(--color-text-9);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.subscription-addon__content {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 24px;
+}
+
+.subscription-addon__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subscription-addon__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-text-2);
+  margin: 0;
+}
+
+.subscription-addon__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-text-5);
+  margin: 0;
+}
+
+.subscription-addon__button {
+  background-color: var(--color-primary-10) !important;
+  color: var(--color-primary-1) !important;
+  padding: 7px 12px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 500 !important;
+  border-radius: 4px !important;
+  border: none !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 2px solid var(--color-primary-8) !important;
+  border-bottom: 2px solid var(--color-primary-8) !important;
+  white-space: nowrap !important;
+}
+
+.subscription-addon__button:hover {
+  background-color: var(--color-primary-9) !important;
 }
 

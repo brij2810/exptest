@@ -1,0 +1,438 @@
+/* ============================================
+   INVOICES PAGE STYLES
+   ============================================ */
+
+/* --------------------------------------------
+   Page Layout
+   -------------------------------------------- */
+.invoices-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-text-10);
+  display: block;
+}
+
+.invoices-page__main {
+  margin-left: 250px;
+  margin-top: 49px;
+  width: calc(100% - 250px);
+  padding: 0;
+  box-sizing: border-box;
+  min-height: calc(100vh - 49px);
+  /* max-width: 1440px; */
+}
+
+.invoices-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------
+   Header Section
+   -------------------------------------------- */
+.invoices-page__header {
+  width: 100%;
+}
+
+.invoices-page__title {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--color-text-2);
+  margin: 0 0 4px 0;
+}
+
+.invoices-page__description {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  margin: 4px 0 0 0;
+}
+
+/* --------------------------------------------
+   Table Wrapper
+   -------------------------------------------- */
+.invoices-page__table-wrapper {
+  background: white;
+  border: 1px solid var(--color-text-9);
+  border-radius: 4px;
+  overflow: hidden;
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.invoices-table {
+  width: 100%;
+  flex: 1;
+}
+
+.invoices-table .table-container {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.invoices-table .table {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.invoices-table .table__column {
+  flex: 1;
+  min-width: 0;
+}
+
+.invoices-table .table__column:first-child {
+  flex: 1.5;
+  min-width: 200px;
+}
+
+.invoices-table .table__column:nth-child(2) {
+  flex: 1.5;
+  min-width: 200px;
+}
+
+.invoices-table .table__column:nth-child(3) {
+  flex: 1.2;
+  min-width: 150px;
+}
+
+.invoices-table .table__column:nth-child(4) {
+  flex: 1;
+  min-width: 120px;
+}
+
+.invoices-table .table__column:nth-child(5) {
+  flex: 1;
+  min-width: 120px;
+}
+
+.invoices-table .table__header-content {
+  padding-right: 44px;
+}
+
+/* Table header padding - 13px vertical */
+.invoices-table .table__header {
+  padding: 13px 0;
+}
+
+/* Table cell padding - 18px vertical for regular cells */
+.invoices-table .table__cell {
+  padding: 18px 0 18px 16px;
+}
+
+/* Action column cells - 14px vertical padding */
+.invoices-table .table__column:nth-child(5) .table__cell {
+  padding: 14px 0 14px 16px;
+}
+
+/* --------------------------------------------
+   Table Content - Cells
+   -------------------------------------------- */
+.invoices-table__invoice-id {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-2);
+}
+
+.invoices-table__date {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  white-space: nowrap;
+}
+
+.invoices-table__amount {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-5);
+  white-space: nowrap;
+}
+
+/* Status column alignment for badges */
+.invoices-table .table__column:nth-child(4) .table__cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Action column alignment - ensure proper vertical alignment */
+.invoices-table .table__column:nth-child(5) .table__cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 14px 16px;
+}
+
+/* --------------------------------------------
+   Download Button - All States
+   -------------------------------------------- */
+.invoices-table__download-button {
+  background: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--color-primary-1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.invoices-table__download-button:hover {
+  background: var(--color-primary-10);
+}
+
+.invoices-table__download-button:active {
+  background: var(--color-primary-9);
+}
+
+.invoices-table__download-button:focus {
+  outline: none;
+  background: var(--color-primary-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-table__download-button:focus-visible {
+  outline: none;
+  background: var(--color-primary-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+/* --------------------------------------------
+   Table Row Interactions
+   -------------------------------------------- */
+.invoices-table .table__cell-wrapper {
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.invoices-table .table__cell-wrapper[data-row-index] {
+  background: white;
+}
+
+.invoices-table .table__cell-wrapper[data-row-index] .table__cell {
+  background: white;
+}
+
+.invoices-table .table__cell-wrapper[data-hovered="true"] {
+  background: var(--color-text-10) !important;
+}
+
+.invoices-table .table__cell-wrapper[data-hovered="true"] .table__cell {
+  background: var(--color-text-10) !important;
+}
+
+.invoices-table .table__cell-wrapper[data-hovered="true"] .invoices-table__download-button {
+  background: var(--color-primary-10);
+}
+
+/* --------------------------------------------
+   Badge Overrides
+   -------------------------------------------- */
+.invoices-table .badge {
+  display: inline-flex;
+}
+
+.invoices-table .badge--subtle.badge--gray {
+  background-color: var(--color-text-9);
+  color: var(--color-text-2);
+}
+
+.invoices-table .badge--subtle.badge--green {
+  background-color: var(--color-system-success-10);
+  color: var(--color-system-success-4);
+}
+
+/* --------------------------------------------
+   Pagination Section
+   -------------------------------------------- */
+.invoices-page__pagination {
+  padding: 16px 24px;
+  border-top: 1px solid var(--color-text-9);
+  background: white;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.invoices-page__pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.invoices-page__pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Pagination Arrow */
+.invoices-page__pagination-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 8px;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-text-7);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.invoices-page__pagination-arrow:hover:not(:disabled) {
+  background: var(--color-text-10);
+}
+
+.invoices-page__pagination-arrow:focus {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__pagination-arrow:focus-visible {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__pagination-arrow--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.invoices-page__pagination-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Pagination Page Number */
+.invoices-page__pagination-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-2);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.invoices-page__pagination-page:hover:not(:disabled) {
+  background: var(--color-text-10);
+}
+
+.invoices-page__pagination-page:focus {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__pagination-page:focus-visible {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__pagination-page--active {
+  background: white;
+  border: 1px solid var(--color-primary-1);
+  font-weight: 500;
+  color: var(--color-primary-1);
+}
+
+.invoices-page__pagination-page--ellipsis {
+  cursor: default;
+  color: var(--color-text-2);
+}
+
+.invoices-page__pagination-page--ellipsis:hover {
+  background: white;
+}
+
+/* Per Page Selector */
+.invoices-page__per-page {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 6px;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.invoices-page__per-page:hover {
+  background: var(--color-text-10);
+}
+
+.invoices-page__per-page:focus {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__per-page:focus-visible {
+  outline: none;
+  background: var(--color-text-10);
+  box-shadow: 0 0 0 2px var(--color-primary-8);
+}
+
+.invoices-page__per-page-text {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-2);
+  white-space: nowrap;
+}
+
+.invoices-page__per-page-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-2);
+}
+
+.invoices-page__per-page-icon svg {
+  width: 16px;
+  height: 16px;
+}
